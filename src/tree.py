@@ -1,5 +1,3 @@
-#ape和math23k的tree不一样,随字表改
-
 class TreeNodeeeeeee(object):
     def __init__(self, x):
         self.val = x

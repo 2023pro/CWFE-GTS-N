@@ -37,7 +37,7 @@ torch.backends.cudnn.deterministic = True
 transformer_name = "hfl/chinese-electra-180g-base-discriminator"
 
 data = load_ape_data("data/train.ape.json")
-pairs, generate_nums, copy_nums ,all_seq_words_nature,all_BO,ID = transfer_ape_num(data, id_file="data/Ape_clean2_train.txt") #Ape_clean2就是论文中的Ape_clean~
+pairs, generate_nums, copy_nums ,all_seq_words_nature,all_BO,ID = transfer_ape_num(data, id_file="data/Ape_clean2_train.txt") #Ape_clean2就是论文中Ape_clean~的ids
 temp_pairs = []
 for p in pairs:
     temp_pairs.append((p[0], from_infix_to_prefix(p[1]), p[2], p[3]))
